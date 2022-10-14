@@ -1,0 +1,44 @@
+.road-img{
+	width: 100%;
+}
+.background{
+	position: relative;
+}
+.road-box{ 
+	position: relative;
+ }
+.motorbike-img{
+	height: 200px;
+	animation-name: motorbike-move;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-delay: 3s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    top: 520px;
+    left: 0px;
+}
+
+.car-img {
+	height: 200px;
+	animation-name: car-move;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    top: 650px;
+    right: 0px;
+}
+
+/*keyframes*/
+@keyframes motorbike-move {
+	from {left: 0;}
+	to {left: 1250px }
+} 
+@keyframes car-move {
+	from {right: 0}
+    to { right: 1250px; }
+}
